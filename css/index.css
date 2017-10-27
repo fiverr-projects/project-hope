@@ -29,7 +29,7 @@ html, body, .container-fluid, #wrapperrow, #intro, #loginform{
 }
 #about{
 	color: #fff;
-	margin: 10% 5% 10% 4%;
+	margin: 10% 5% 0% 4%;
 }
 #about h1{
 	font-family: 'Raleway', sans-serif;
@@ -44,7 +44,7 @@ html, body, .container-fluid, #wrapperrow, #intro, #loginform{
 	width: 90%;
 	background-color: #fff;
 }
-#registerhere{
+#registerhere, #loginhere{
 	color: white;
 	background-color: #00A876;
 	font-family: 'Raleway', sans-serif;
@@ -75,14 +75,17 @@ input{
 	/*padding-left: 10%;*/
 	font-family: 'Raleway',sans-serif;
 }
+#loginform h2{
+	margin-bottom: 24px;
+}
 #loginbutton{
 	background-color: #fff;
 	color: #00A876;
 	font-size: 18px;
 	font-family: 'Raleway', sans-serif;
 	border-radius: 0;
-	margin-top: 10px;
-	margin-left: 20px;
+	margin-top: 20px;
+	margin-left: 5%;
 }
 #appmotto{
     color: #fff;

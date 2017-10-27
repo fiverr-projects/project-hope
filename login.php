@@ -33,35 +33,25 @@
 					<!-- <h1>
 						Welcome
 					</h1> -->
-					<h2 id="hr">
-					</h2>
+					<p id="hr">
+					</p>
 					</span>
-					<!-- <p>
-						Queens Gambit is a web based application which predicts chessboard FEN layouts from Chessboard images using the concepts of Image processing and Deep Learning. The game state can then be resumed in Single player as well as multiplayer mode. 
-					</p> -->
 					<button class="btn" id="registerhere">
-						Login Here
+						Register Here
 					</button>
 				</div>
 			</div>
 			<div id="loginform" class="col-md-5">
 				<h2>
-					Or Signup to your account
+					Or login to your account
 				</h1>
-                <form method="post" action="http://localhost/hope/index.php" onsubmit="return validateForm()" id="myForm">
+                <form method="post" action="/hope/index.php" onsubmit="return validateForm()" id="myForm">
     				<div id="sign-up-form">
-
-                        <input class="form-control" type="text" name="username" placeholder="User Name" required>
-                        <br>
-
-    					<input id="first" class="form-control" name="email" type="email" placeholder="Email Id" required>
+    					<input id="first" class="form-control" name="email" type="email"  placeholder="Email Id" required>
     					<!-- <span class="divider"></span> -->
                         <br>
-    					<input id="second"  class="form-control" name="password" type="Password" placeholder="Password" required>
+    					<input id="second"  class="form-control" id="inputDefault" name="password" type="Password" placeholder="Password" required>
     					<!-- <span class="divider"></span> -->
-                        <br>
-
-                        <input id="second"  class="form-control" name="password" type="Password" placeholder="Confirm Password" required>
     				
     					<input type="submit" id="loginbutton" class="btn" type="button" value="Login">
     				</div>
@@ -71,7 +61,12 @@
 		</div>
 	</div>
 
+    <!-- <script src="/hope/js/parsley.min.js"></script> -->
     <script type="text/javascript">
+        $('#registerhere').on('click', function(){
+            window.location.replace("/hope/signup.php");
+        });
+
         function validateForm() {
         var x = document.forms["myForm"]["username"].value;
         if (x == "") {
